@@ -4,7 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
  
-namespace tcpcrawler {
+namespace udpcrawler {
     class Program {
         static IPAddress remoteAddress; // host to send data
         const int remotePort = 420; // port for sending data
