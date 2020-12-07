@@ -28,7 +28,7 @@ namespace udpcrawler {
             IPEndPoint endPoint = new IPEndPoint(remoteAddress, remotePort);
             try {
                 while (true) {
-                    string message = Console.ReadLine(); // сmessage for sending
+                    string message = Console.ReadLine(); // message for sending
                     message = String.Format("{0}: {1}", username, message);
                     byte[] data = Encoding.Unicode.GetBytes(message);
                     sender.Send(data, data.Length, endPoint); // sending
